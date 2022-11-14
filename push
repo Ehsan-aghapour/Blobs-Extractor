@@ -1,0 +1,24 @@
+
+graph=""
+if [ "$1" -eq 1 ]; then
+    graph=alexnet
+fi
+
+
+if [ "$1" -eq 2 ]; then                                                                
+    graph=googlenet     
+fi 
+
+if [ "$1" -eq 3 ]; then                                                                
+    graph=mobilenet    
+fi 
+
+if [ "$1" -eq 4 ]; then                                                                
+    graph=resnet50  
+fi 
+
+if [ "$1" -eq 5 ]; then                                                                
+    graph=squeezenet
+fi     
+
+adb push assets/$graph /data/data/com.termux/files/home/ARMCL-Khadas/assets/$graph

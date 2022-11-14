@@ -1,0 +1,24 @@
+
+graph=""
+if [ "$1" -eq 1 ]; then
+    graph=graph_alexnet_n_pipe
+fi
+
+
+if [ "$1" -eq 2 ]; then                                                                
+    graph=graph_googlenet_n_pipe     
+fi 
+
+if [ "$1" -eq 3 ]; then                                                                
+    graph=graph_mobilenet_n_pipe    
+fi 
+
+if [ "$1" -eq 4 ]; then                                                                
+    graph=graph_resnet50_n_pipe   
+fi 
+
+if [ "$1" -eq 5 ]; then                                                                
+    graph=graph_squeezenet_n_pipe
+fi     
+p=/home/ehsan/UvA/ARMCL/ComputeLibrary
+pushtest ${p}/build/examples/$graph test-graph/ NEON $1 $1 1 5 0 0 100 100 B 0 4 2

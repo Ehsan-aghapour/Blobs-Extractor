@@ -1,0 +1,11 @@
+assets/squeezenet filter=lfs diff=lfs merge=lfs -text
+assets/alexnet filter=lfs diff=lfs merge=lfs -text
+assets/convert_images.py filter=lfs diff=lfs merge=lfs -text
+assets/googlenet filter=lfs diff=lfs merge=lfs -text
+assets/labels.txt filter=lfs diff=lfs merge=lfs -text
+assets/README filter=lfs diff=lfs merge=lfs -text
+assets/resnet50 filter=lfs diff=lfs merge=lfs -text
+assets/mobilenet filter=lfs diff=lfs merge=lfs -text
+assets/ppm_images_224 filter=lfs diff=lfs merge=lfs -text
+assets/ppm_images_227 filter=lfs diff=lfs merge=lfs -text
+assets/** filter=lfs diff=lfs merge=lfs -text
